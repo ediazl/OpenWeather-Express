@@ -3,7 +3,7 @@ const { MongoClient } = require("mongodb");
 require("dotenv").config();
 require("./DB/config");
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 const OpenWeatherRouter = require("./openweather/Openweather.router");
 
